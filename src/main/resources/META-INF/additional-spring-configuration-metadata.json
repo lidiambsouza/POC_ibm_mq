@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "ibm.queues.sampleQueues",
+    "type": "java.lang.String",
+    "description": "A description for 'ibm.queues.sampleQueues'"
+  },
+  {
+    "name": "ibm.mq.port",
+    "type": "java.lang.String",
+    "description": "A description for 'ibm.mq.port'"
+  },
+  {
+    "name": "demo.concurrency.size.high",
+    "type": "java.lang.String",
+    "description": "A description for 'demo.concurrency.size.high'"
+  },
+  {
+    "name": "demo.concurrency.size.low",
+    "type": "java.lang.String",
+    "description": "A description for 'demo.concurrency.size.low'"
+  },
+  {
+    "name": "ibm.mq.host",
+    "type": "java.lang.String",
+    "description": "A description for 'ibm.mq.host'"
+  }
+]}
