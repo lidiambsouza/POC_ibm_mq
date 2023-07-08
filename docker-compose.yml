@@ -1,0 +1,27 @@
+version: "3.6"
+
+services:
+
+    ibmmq:
+        image: 'docker.io/ibmcom/mq'
+        environment:
+          - LICENSE=accept
+          - MQ_QMGR_NAME=QM1
+          - MQ_ADMIN_PASSWORD=lmbslmbs
+        ports:
+          - '1414:1414'
+          - '9443:9443'
+        volumes:
+          - ibmmq-data:/mnt/mqm
+        container_name: ibmmq
+        networks:
+          - ibmmq-net
+        restart: always
+
+volumes:
+  ibmmq-data:
+
+networks:
+  ibmmq-net:
+    driver:
+      bridge
